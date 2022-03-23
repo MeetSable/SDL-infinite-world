@@ -294,7 +294,7 @@ void vDisp::imgui()
 		ImGui::Text("Scale");
 		temp2[0] = polygonArray[currEditing].transform.scale.x;
 		temp2[1] = polygonArray[currEditing].transform.scale.y;
-		ImGui::DragFloat2("##2", temp2, 1.f,.01f,1.f,"%.1f",0);
+		ImGui::DragFloat2("##2", temp2);
 		polygonArray[currEditing].transform.scale = { (int)temp2[0], (int)temp2[1] };
 		if (ImGui::Button("Close"))
 		{
